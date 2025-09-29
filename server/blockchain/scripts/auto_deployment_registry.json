@@ -58,5 +58,29 @@
     "network": "sepolia",
     "timestamp": "2025-09-29T16:46:26.132Z",
     "status": "AUTO_DEPLOYED"
+  },
+  {
+    "originalContract": "0x7bFF5378f618297Cc2c9E38199645C4E820cfFD9",
+    "proxyContract": "0x14b2374b4C6b8807001Cdc3386f3228bA0D1e7eb",
+    "riskScore": 64,
+    "threshold": 50,
+    "mlAnalysis": {
+      "vulnerabilities": 2
+    },
+    "network": "sepolia",
+    "timestamp": "2025-09-29T20:39:38.568Z",
+    "status": "AUTO_DEPLOYED"
+  },
+  {
+    "originalContract": "0x7bFF5378f618297Cc2c9E38199645C4E820cfFD9",
+    "proxyContract": "0x4a8710B1d678B5F3697870192f4CA90d0870403F",
+    "riskScore": 79,
+    "threshold": 50,
+    "mlAnalysis": {
+      "vulnerabilities": 2
+    },
+    "network": "sepolia",
+    "timestamp": "2025-09-29T21:25:40.803Z",
+    "status": "AUTO_DEPLOYED"
   }
 ]
