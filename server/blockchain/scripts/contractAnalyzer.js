@@ -1,8 +1,10 @@
-require("dotenv").config({ path: '../../../.env' });
+
 const securityAnalysisService = require('../../services/securityAnalysisService');
 const compilationService = require('../../services/compilationService');
 const deploymentService = require('../../services/deploymentService');
-
+if (!process.env.DOCKER_ENV) {
+    require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
+}
 class ContractAnalyzer {
     constructor() {
         this.riskThreshold = 70; // Deployment blocked if risk score >= 70

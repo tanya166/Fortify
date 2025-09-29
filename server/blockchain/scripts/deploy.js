@@ -1,5 +1,8 @@
-require("dotenv").config();
+
 const hre = require("hardhat");
+if (!process.env.DOCKER_ENV) {
+    require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
+}
 async function main() {
   const targetContract = process.env.TARGET_CONTRACT;
   if (!targetContract) {

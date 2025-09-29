@@ -1,8 +1,8 @@
-require("dotenv").config({ path: '../../../.env' });
-
 const { ethers } = require("ethers");
 const fs = require('fs');
-
+if (!process.env.DOCKER_ENV) {
+    require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
+}
 const INFURA_RPC_URL = process.env.INFURA_RPC_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 

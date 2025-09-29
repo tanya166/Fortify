@@ -5,18 +5,6 @@ const { ethers } = require('ethers');
 if (!process.env.DOCKER_ENV) {
     require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
 }
-let envFound = false;
-for (const envPath of envPaths) {
-    console.log(`   Checking: ${envPath}`);
-    if (fs.existsSync(envPath)) {
-        console.log(`✅ Found .env file at: ${envPath}`);
-        require('dotenv').config({ path: envPath });
-        envFound = true;
-        break;
-    } else {
-        console.log(`   ❌ Not found`);
-    }
-}
 
 class DeploymentService {
     constructor() {
