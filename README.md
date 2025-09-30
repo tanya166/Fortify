@@ -40,8 +40,7 @@ womanTechies/
 | Area         | Tech Used |
 |--------------|-----------|
 | ✍️ Frontend  | React + Vite + JavaScript |
-| 🔌 Backend   | Express.js + MongoDB + Node |
-| 🔒 Auth      | Passport.js (Google OAuth2) |
+| 🔌 Backend   | Express.js + Node |
 | ⚙️ Compiler  | solc-js (WebAssembly) |
 | 🔗 Blockchain| Solidity + Hardhat |
 | 🤖 ML Model  | Python, Scikit-learn, PyTorch, Streamlit, FastAPI |
@@ -160,16 +159,6 @@ Fortify returns a JSON output like:
 ```
 
 This output is then used to analyze, test, and simulate your smart contract.
-
----
-
-## 👥 Contributors
-
-| Name           | GitHub                                             |
-| -------------- | -------------------------------------------------- |
-| Aradhye Swarup | [@cjaradhye](https://github.com/cjaradhye)         |
-| Ved Kulkarni   | [@Ved-Kulkarni7](https://github.com/Ved-Kulkarni7) |
-| Tanya Bhardwaj | [@tanya166](https://github.com/tanya166)           |
 
 ---
 
