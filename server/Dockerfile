@@ -13,11 +13,12 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip3 install --no-cache-dir slither-analyzer solc-select
 
-
+ENV PATH="/usr/local/bin:$PATH"
+ENV PATH="/root/.local/bin:$PATH"
 RUN solc-select install 0.8.19 && solc-select use 0.8.19
 RUN solc-select install 0.8.9
 RUN solc-select install 0.8.21
-
+RUN slither --version && echo "✅ Slither installed successfully" || echo "❌ Slither installation failed"
 WORKDIR /app
 
 COPY package*.json ./
