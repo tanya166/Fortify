@@ -1,4 +1,4 @@
-# 🛡️ Fortify
+# 🛡️ Fortify - https://fortify-project.vercel.app/
 
 **Write. Compile. Fortify.**  
 A full-stack Solidity IDE & vulnerability scanner that lets developers build, test, and secure smart contracts — with AI-powered insights.
@@ -24,7 +24,6 @@ Whether you're a beginner or a blockchain pro, Fortify makes sure you're never s
 ```
 
 womanTechies/
-├── blockchain/         # Smart contracts (Hardhat-based)
 ├── client/             # React (Vite) frontend IDE
 ├── contracts/fetched/  # Compiled ABI + Bytecode
 ├── model/              # ML scripts and vulnerability detection ( using slither now )
@@ -43,7 +42,6 @@ womanTechies/
 | 🔌 Backend   | Express.js + Node |
 | ⚙️ Compiler  | solc-js (WebAssembly) |
 | 🔗 Blockchain| Solidity + Hardhat |
-| 🤖 ML Model  | Python, Scikit-learn, PyTorch, Streamlit, FastAPI |
 
 ---
 
