@@ -9,7 +9,7 @@ A full-stack Solidity IDE & vulnerability scanner that lets developers build, te
 
 Fortify is a developer-first smart contract IDE that allows:
 
-- 🧠 **Live ML-based vulnerability detection**
+- 🧠 **Slither-based vulnerability detection**
 - 🔐 **Secure contract compilation and ABI generation**
 - ✍️ **Real-time Solidity editing inside a React interface**
 - 🚀 **Full-stack dApp integration using Vite + MERN**
@@ -27,7 +27,7 @@ womanTechies/
 ├── blockchain/         # Smart contracts (Hardhat-based)
 ├── client/             # React (Vite) frontend IDE
 ├── contracts/fetched/  # Compiled ABI + Bytecode
-├── model/              # ML scripts and vulnerability detection
+├── model/              # ML scripts and vulnerability detection ( using slither now )
 ├── server/             # Express backend, OAuth, compiler API
 ├── README.md
 
@@ -82,60 +82,6 @@ cd ../client
 npm install
 npm run dev
 ```
-
-### ML Model (Python)
-
-```bash
-cd ../model
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-> Run Streamlit/FastAPI app from `model/` to expose vulnerability prediction API.
-
----
-
-## 🔐 Google OAuth Setup
-
-1. Go to [Google Cloud Console](https://console.cloud.google.com)
-
-2. Create OAuth 2.0 credentials
-
-3. Set callback URL:
-
-   ```
-   http://localhost:3000/auth/google/callback
-   ```
-
-4. Add to your `.env` file in `server/`:
-
-```env
-GOOGLE_CLIENT_ID=your-id
-GOOGLE_CLIENT_SECRET=your-secret
-SESSION_SECRET=random-key
-```
-
----
-
-## 📦 `requirements.txt`
-
-Used in the ML backend (`model/`):
-
-```
-numpy
-pandas
-virtualenv
-scikit-learn
-torch
-streamlit
-uvicorn
-request
-flask
-fastapi
-```
-
----
 
 ## 🧪 ABI/Bytecode Example :
 
